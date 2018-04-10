@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PiggyIOCPServer">
+</Property><Property Name="解决方案文件" Value="G:\project\2017\天谕中间件\PiggyIOCPServer\PiggyIOCPServer.sln">
+</Property><Property Name="Date" Value="2017年10月28日 星期六">
+</Property><Property Name="Time" Value="0:56:18">
+</Property></Properties><Event ErrorLevel="0" Project="PiggyIOCPServer" Source="PiggyIOCPServer.vcproj" Description="Converting project file 'G:\project\2017\天谕中间件\PiggyIOCPServer\PiggyIOCPServer.vcproj'.">
+</Event><Event ErrorLevel="1" Project="PiggyIOCPServer" Source="PiggyIOCPServer.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="PiggyIOCPServer" Source="PiggyIOCPServer.vcproj" Description="Done converting to new project file 'G:\project\2017\天谕中间件\PiggyIOCPServer\PiggyIOCPServer.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="PiggyIOCPServer" Source="PiggyIOCPServer.vcproj" Description="Converted">
+</Event></UpgradeLog>

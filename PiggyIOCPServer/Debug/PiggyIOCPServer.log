@@ -1,0 +1,15 @@
+﻿  IOCPModel.cpp
+f:\2017\天谕中间件\piggyiocpserver\iocpmodel.cpp(1468): warning C4002: “_T”宏的实参太多
+f:\2017\天谕中间件\piggyiocpserver\iocpmodel.cpp(1483): warning C4002: “_T”宏的实参太多
+  Microsoft (R) Incremental Linker Version 10.00.40219.01
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:F:\2017\天谕中间件\Debug\PiggyIOCPServer.exe" "/LIBPATH:C:\Program Files\Visual Leak Detector\lib\Win32" mqrt.lib /MANIFEST "/ManifestFile:Debug\PiggyIOCPServer.exe.intermediate.manifest" "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /DEBUG "/PDB:F:\2017\天谕中间件\Debug\PiggyIOCPServer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:F:\2017\天谕中间件\Debug\PiggyIOCPServer.lib" /MACHINE:X86 Debug\PiggyIOCPServer.res 
+  Debug\agsMSMQ.obj 
+  Debug\IOCPModel.obj 
+  Debug\MainDlg.obj 
+  Debug\PiggyIOCPServer.obj 
+  Debug\stdafx.obj 
+  Debug\StreamLog.obj 
+  LINK : 没有找到 F:\2017\天谕中间件\Debug\PiggyIOCPServer.exe 或上一个增量链接没有生成它；正在执行完全链接
+  PiggyIOCPServer.vcxproj -> F:\2017\天谕中间件\Debug\PiggyIOCPServer.exe

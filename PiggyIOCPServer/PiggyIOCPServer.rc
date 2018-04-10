@@ -1,0 +1,242 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PiggyIOCPServer.rc2""  // ?¤? Microsoft Visual C++ ?à¨¤?-|ì??á¨o???\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ?à¨o?á??á¨|?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PiggyIOCPServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于IOCP Server Example"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "IOCP Server Example，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009 PiggyXP【小猪】",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PIGGYIOCPSERVER_DIALOG DIALOGEX 0, 0, 650, 357
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IOCP Server "
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "开始监听",IDOK,59,336,50,14
+    PUSHBUTTON      "退出",IDCANCEL,221,336,50,14
+    LTEXT           "服务器IP地址：",IDC_STATIC,14,304,48,8
+    LTEXT           "127.0.0.1",IDC_STATIC_SERVERIP,64,305,79,8
+    PUSHBUTTON      "停止监听",IDC_STOP,139,336,50,14,WS_DISABLED
+    CONTROL         "",IDC_LIST_INFO,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,413,7,228,283
+    LTEXT           "监听端口：",IDC_STATIC,168,305,35,8
+    EDITTEXT        IDC_EDIT_PORT,214,303,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "考勤信息查询",IDC_BUTTON1,593,336,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_LIST_MSG,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,399,283
+    GROUPBOX        "选择数据交换方式",IDC_STATIC,287,277,83,72,NOT WS_VISIBLE
+    CONTROL         "调用存储过程",IDC_RADIO_PROCEDURE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,295,295,57,10
+    CONTROL         "消息队列",IDC_RADIO_POSTHTTP,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,295,314,43,10
+    CONTROL         "None",IDC_RADIO_NONE,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE,295,333,33,10
+    CONTROL         "写日志开关",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,425,301,50,10
+    CONTROL         "启动",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,425,315,30,10
+END
+
+IDD_DIALOG_ATT DIALOGEX 0, 0, 416, 231
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤信息查询"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,167,19,50,15
+    CONTROL         "",IDC_DATETIMEPICKER3,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,217,19,47,15
+    CONTROL         "",IDC_DATETIMEPICKER4,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,291,19,50,15
+    CONTROL         "",IDC_DATETIMEPICKER5,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,341,19,47,15
+    GROUPBOX        "考勤信息查询",IDC_STATIC,11,7,392,217
+    LTEXT           "请输入卡号：",IDC_STATIC,26,20,53,9
+    EDITTEXT        IDC_EDIT1,82,18,74,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,19,64,376,152
+    LTEXT           "——",IDC_STATIC,269,21,14,10
+    PUSHBUTTON      "卡号查询",IDC_BUTTON_QUEUE_ID,72,47,55,14
+    PUSHBUTTON      "时间维度查询",IDC_BUTTON_QUEUE_DATE,261,47,50,14
+    PUSHBUTTON      "清空",IDC_BUTTON3,343,47,50,14
+    LTEXT           "",IDC_STATIC_COUNT,169,50,48,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,2,2,1
+ PRODUCTVERSION 2,2,2,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TELPO"
+            VALUE "FileDescription", "TELPO"
+            VALUE "FileVersion", "2.2.2.1"
+            VALUE "InternalName", "PiggyIOCPServer.exe"
+            VALUE "LegalCopyright", "(C) <TELPO>。保留所有权利。"
+            VALUE "OriginalFilename", "PiggyIOCPServer.exe"
+            VALUE "ProductName", "IOCP"
+            VALUE "ProductVersion", "2.2.2.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PIGGYIOCPSERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 643
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_DIALOG_ATT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 PiggyIOCPServer(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PiggyIOCPServer.rc2"  // ?¤? Microsoft Visual C++ ?à¨¤?-|ì??á¨o???
+#include "l.CHS\afxres.rc"      // ?à¨o?á??á¨|?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
